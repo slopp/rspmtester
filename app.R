@@ -3,7 +3,7 @@ library(httr)
 library(gt)
 library(stringr)
 
-pkgs <- available.packages(repos = "https://demo.rstudiopm.com/cran/latest")
+pkgs <- available.packages(repos = "https://solo.rstudiopm.com/cran/latest")
 base_url <- "https://solo.rstudiopm.com/cran/__linux__/%s/latest"
 
 # --- helpers
