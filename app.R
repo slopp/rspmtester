@@ -1,6 +1,5 @@
 library(shiny)
 library(httr)
-library(gt)
 library(stringr)
 
 pkgs <- available.packages(repos = "https://solo.rstudiopm.com/cran/latest")
@@ -26,7 +25,7 @@ ui <- fluidPage(
       checkboxGroupInput('rvers', label = "R Versions to Check", choices = c("3.4", "3.5", "3.6"), selected = TRUE)
     ),
     mainPanel(
-     gt_output("results")
+     tableOutput("results")
     )
   )
 )
@@ -55,8 +54,8 @@ server <- function(input, output, session){
     results
   })
   
-  output$results <- render_gt({
-    gt(data())
+  output$results <- renderTable({
+    data()
   })
 }
 
