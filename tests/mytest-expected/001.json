@@ -1,0 +1,14 @@
+{
+  "input": {
+    "distros": null,
+    "package": "sf",
+    "package-selectized": "sf",
+    "rvers": null
+  },
+  "output": {
+    "results": "<table  class = 'table shiny-table table- spacing-s' style = 'width:auto;'>\n<thead> <tr> <th style='text-align: left;'> os <\/th> <th style='text-align: left;'> r_version <\/th> <th style='text-align: left;'> result <\/th>  <\/tr> <\/thead> <tbody>\n  <\/tbody> <\/table>"
+  },
+  "export": {
+
+  }
+}
